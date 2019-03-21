@@ -17,7 +17,7 @@ def password():
     arg3.append(psw)
     subprocess.Popen(['/home/pi/Flask-AP/ssid.sh', ' '.join(arg), ' '.join(arg3)])
     subprocess.Popen('/home/pi/Flask-AP/gowifi.sh')
-#subprocess.Popen(['/home/pi/Flaks-AP/ssid.sh', "ssid"])
+    #subprocess.Popen(['/home/pi/Flaks-AP/ssid.sh', "ssid"])
     #return render_template('password.html')
     return "Appreciated"
 @app.route('/end', methods=['POST'])
